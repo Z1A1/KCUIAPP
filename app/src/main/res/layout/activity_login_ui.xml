@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bc"
+tools:context="com.kevin.admin.kcappdevelopment.LoginUI">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_marginTop="35dp"
+    android:background="#00bfff"
+    android:contentDescription=""
+    app:srcCompat="@drawable/kc"
+    tools:ignore="ContentDescription"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" tools:targetApi="donut" />
+
+<EditText
+    android:id="@+id/loginame"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_alignStart="@+id/loginPass"
+    android:layout_below="@+id/imageView"
+
+    android:layout_marginTop="41dp"
+    android:background="@drawable/bc"
+    android:drawableLeft="@drawable/ic_action_name"
+    android:ems="12"
+    android:hint="UserName"
+    android:inputType="textPersonName"
+    tools:ignore="HardcodedText,LabelFor,RtlHardcoded" tools:targetApi="cupcake" />
+
+<EditText
+    android:id="@+id/loginPass"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@+id/loginame"
+    android:layout_marginEnd="24dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/bc"
+    android:drawableLeft="@drawable/ic_action_kc"
+    android:ems="12"
+    android:hint="Password"
+    android:inputType="textPassword"
+    tools:ignore="HardcodedText,LabelFor,RtlHardcoded" tools:targetApi="cupcake" />
+
+
+    <TextView
+        android:id="@+id/logreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:onClick="onclick"
+        android:text="Register Here"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage"
+        tools:targetApi="donut" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/logintext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</android.widget.RelativeLayout>
